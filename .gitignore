@@ -1,0 +1,28 @@
+# Create or overwrite .gitignore
+@"
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual Environment (library files)
+venv/
+.venv/
+env/
+ENV/
+
+# Playwright test artifacts
+test-results/
+playwright-report/
+screenshots/
+videos/
+
+# IDE settings
+.vscode/
+.idea/
+.DS_Store
+
+# Environment variables
+.env
+"@ | Out-File -FilePath .gitignore -Encoding UTF8 -NoNewline
